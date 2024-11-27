@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="image/hgb logo.jpg" type="image/x-icon">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    
+   
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+    
+
+}
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+
+}
+h1{
+    color: white;
+    font-size: large;
+    margin-left: 10px;
+}
+.container2 h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container2 h2 span{
+    color: skyblue;
+}
+
+.contact-section {
+    margin-top: 20px;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info button {
+    background-color: seagreen;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: seagreen;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none; 
+ 
+}
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none; 
+}
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.hamburger-menu li {
+    margin-bottom: 20px;
+}
+.hamburger-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; 
+    }
+    nav ul {
+        display: none; 
+    }
+    .hamburger-menu {
+        display: none; 
+    }
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .close-btn{
+    color: white;
+    background-color: skyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/hgb logo.jpg" class="image">
+            <h1>HGBaquiran College</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="image/menu.png" alt="Menu Icon">
+            </div>
+        </div><br><br>
+        <div class="container2">
+            <h2>Welcome to <span>HGBaquiran College</span></h2><br>
+        <main>    
+            <h2>Contact <span>Us</span></h2><br><br>
+        
+            <section class="contact-section"></section>
+                <div class="contact-info">
+                    <h3>Address:</h3>
+                    <p>Honorato Guzman Baquiran College</p>
+                    <p>Tumauini, Isabela, Philippines</p>
+
+                    <h3>Phone:</h3>
+                    <p>(+63) 912-345-6789</p>
+
+                    <h3>Email:</h3>
+                    <p>info@hgbaquirancollege.org</p>
+                    <h3>Location:</h3>
+                    <p><a href="https://www.google.com/maps/place/HGBaquiran+College,+Inc./@17.2761276,121.8063963,17z/data=!3m1!4b1!4m6!3m5!1s0x3385657da1308475:0x3e2f74814bba0784!8m2!3d17.2761225!4d121.8089712!16s%2Fg%2F11clwjs1r1?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"><button>Location</button></a></p>
+                    <br><br><br><br><br><br><br>
+                    <p>&copy; 2023 HGBaquiran College. All Rights Reserved.</p>
+               </div>
+               <div class="contact-info">
+
+                   <h3>Send Us a Message</h3>
+                   <form>
+                       <label for="name">Name:</label>
+                       <input type="text" id="name" required><br><br>
+
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" required><br><br>
+
+                       <label for="message">Message:</label>
+                       <textarea id="message" rows="5" required></textarea><br><br>
+
+                       <button type="submit">Send</button>
+                   </form>
+               </div>
+          
+           </section>
+       </main>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                
+            </ul>
+            <button class="close-btn" onclick="toggleMenu()">EXIT</button>
+        </div>
+    </div>    
+</body>
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById('hamburgerMenu');
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+</html>
